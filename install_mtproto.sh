@@ -18,16 +18,16 @@ PORT = 443
 TLS_DOMAIN = "cdn.cloudflare.com"
 
 USERS = {
-    "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d1": "User01",
-    "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d2": "User02",
-    "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d3": "User03",
-    "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d4": "User04",
-    "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d5": "User05",
-    "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6": "User06",
-    "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d7": "User07",
-    "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d8": "User08",
-    "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d9": "User09",
-    "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5da": "User10"
+    "User01": "c87ebc6c55fd2387187aca574e6ed809",
+    "User02": "7ff756f2a5ae7696ba9f2bca8eb89838",
+    "User03": "cd2e3a6cd67101797b470a289f9221f9",
+    "User04": "f88e5cdac5ba9c5f5c829a0ad70d2194",
+    "User05": "389b20dc2b3d122026d67b75aa828c5c",
+    "User06": "b3c13c6fc82699f17ab75879da689dfc",
+    "User07": "baac3bab9c3330e13f3b97eec73968f8",
+    "User08": "b8d610a2d6316db9be49a7b26243d7b8",
+    "User09": "f53be43c08e2e70a3cc93d45c4531aa7",
+    "User10": "16ca288722d4352123a6edad90888ad9"
 }
 
 MODES = {
@@ -64,16 +64,16 @@ echo "✅ MTProto Proxy đang chạy!"
 echo "🌐 Tên miền: proxy.namdm.io.vn"
 echo "🔗 Link truy cập:"
 for SECRET in \
-  a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d1 \
-  a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d2 \
-  a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d3 \
-  a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d4 \
-  a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d5 \
-  a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6 \
-  a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d7 \
-  a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d8 \
-  a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d9 \
-  a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5da
+  c87ebc6c55fd2387187aca574e6ed809 \
+  7ff756f2a5ae7696ba9f2bca8eb89838 \
+  cd2e3a6cd67101797b470a289f9221f9 \
+  f88e5cdac5ba9c5f5c829a0ad70d2194 \
+  389b20dc2b3d122026d67b75aa828c5c \
+  b3c13c6fc82699f17ab75879da689dfc \
+  baac3bab9c3330e13f3b97eec73968f8 \
+  b8d610a2d6316db9be49a7b26243d7b8 \
+  f53be43c08e2e70a3cc93d45c4531aa7 \
+  16ca288722d4352123a6edad90888ad9
 do
   echo "tg://proxy?server=proxy.namdm.io.vn&port=443&secret=ee${SECRET}${HEX_DOMAIN}"
 done
